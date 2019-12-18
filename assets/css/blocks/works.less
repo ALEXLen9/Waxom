@@ -1,0 +1,69 @@
+// main: ../style.less
+
+.works__text{
+    max-width: 720px;
+    margin: 120px auto 0;
+    text-align: center;
+
+    @media @mobile-sm{
+        margin: 4rem auto 0;
+    }
+}
+
+.works__title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: @gray__low;
+
+    margin-bottom: 1.6rem;
+
+    @media @mobile-sm{
+        font-size: 1.6rem;
+    }
+}
+
+.works__subtitle{
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: @gray__mid;
+
+    @media @mobile-sm{
+        font-size: 0.94rem;
+    }
+}
+
+.works__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0;
+    align-items: center;
+
+    @media @mobile-sm{
+        padding: 1rem 0;
+    }
+}
+
+.works__nav-link{
+    font-size: 0.92rem;
+    font-weight: 300;
+    padding: 0.35rem 1.4rem;
+    margin: 2rem 0.2rem;
+
+    border: 1px solid @gray__light;
+    border-radius: 2px;
+    background: none;
+    color: fade(@gray__mid, 70%);
+
+    text-decoration: none;
+    transition: background 0.2s linear, color 0.2s linear;
+
+    &:hover{
+        color: @white;
+        background: @brown;
+    }
+
+    @media @mobile-sm{
+        margin: 0.2rem;
+    }
+}

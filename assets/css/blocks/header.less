@@ -1,0 +1,27 @@
+// main: ../style.less
+
+.header{
+    width: 100%;
+    padding-top: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+
+    @media @tablet{
+        background-color: @black__light;
+        position: fixed;
+        padding-bottom: 1rem;
+    }
+
+}
+
+.header__inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

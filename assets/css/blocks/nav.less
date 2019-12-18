@@ -1,0 +1,51 @@
+// main: ../style.less
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    
+
+    @media @tablet{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+
+        background-color: @black__light;
+        box-shadow: 0 5px 10px rgba(80, 80, 80, 0.3);
+
+        text-align: center;
+        display: none;
+
+        &.show{
+            display: flex;
+        }
+
+    }
+
+    
+}
+
+.nav__link{
+    font-size: 0.92rem;
+    color: @white;
+    text-decoration: none;
+
+    padding: 1rem 1rem;
+    transition: color 0.2s linear;
+
+    &:hover{
+        color: @brown;   
+    }
+
+    @media @tablet{
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        margin-left: 0;
+    }
+}   

@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.7rem 2rem;
+
+    border: 3px solid @brown;
+    border-radius: 5px;
+    background: none;
+
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: @brown;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: background 0.2s linear, color 0.2s linear, border-bottom 0.2s linear;
+    
+    &:hover{
+        background: @brown;
+        border: 3px solid @brown__mid;
+        border-bottom: 3px solid @brown__low;
+        color: @white;
+        background-color: @brown__mid;
+    }
+
+}
+
+.slick-arrow{
+    display: block;
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 3px solid @brown__light;
+    border-left: 3px solid @brown__light;
+    
+}
+
+
+.slick-prev{
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.slick-next{
+    right: 0;
+    transform: rotate(135deg);
+}

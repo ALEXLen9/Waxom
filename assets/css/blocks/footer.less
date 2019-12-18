@@ -1,0 +1,130 @@
+// main: ../style.less
+
+.footer{
+    padding: 5.3rem 0 3.3rem;
+
+    background-color: @black__mid;
+
+    @media @tablet{ 
+        padding: 2.5rem 0 3.3rem;
+    }
+}
+
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__col{
+    flex-basis: 24.3%;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+    min-width: 270px;
+}
+
+.footer__text{
+    margin-bottom: 1rem;
+    font-size: 0.94rem;
+    color: @gray__low;
+
+    transition: color 0.2s linear;
+}
+
+.footer__readmore{
+    font-size: 0.94rem;
+    color: @gray__mid;
+    text-decoration: none;
+    transition: text-decoration 0.9s linear, color 0.2s linear;
+
+    &:hover{
+        text-decoration: underline;
+        color: @gray__light;
+    }
+}
+
+.footer__title{
+    margin: 1rem 0 1rem;
+
+    font-size: 1.65rem;
+    color: @white;
+    font-weight: 500;
+}
+
+.footer__logo{
+    margin-top: 1.7rem;
+    line-height: 1.5;
+}
+
+.footer__posts{
+    border-bottom: 1px solid @black__light;
+    padding: 1rem auto;
+
+    &:hover{
+        .footer__text{
+            color: @brown__light;
+        }
+
+        .footer__date{
+            color: @white;
+        }
+
+        .footer__link{
+            color: @gray__light;
+        }
+    }
+
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+.footer__date{
+    display: block;
+    padding: 1rem 0 0.3rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: @black__light;
+
+    transition: color 0.2s linear;
+    
+}
+
+.text__twitter{
+    padding-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.date__twitter{
+    padding: 0.3rem 0 1rem;
+}
+
+.text__link{
+    color: @blue__link;
+    text-decoration: none;
+}
+
+.footer__link{
+    color: @gray__mid;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.footer__images{
+    display: flex;  
+    flex-wrap: wrap; 
+    margin-top: 2rem;
+}
+
+.images__item{
+    width: 50%;
+    opacity: 1;
+    border-left: 5px solid @black__mid;
+    transition: opacity 0.1s linear;
+    
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
