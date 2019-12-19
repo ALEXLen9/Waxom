@@ -2,32 +2,35 @@
 
 .btn{
     display: inline-block;
+    width: 170px;
     vertical-align: top;
     padding: 0.7rem 2rem;
 
-    border: 3px solid @brown;
+    border: 1px solid transparent;
+    border-bottom: 3px solid @brown__low;
     border-radius: 5px;
-    background: none;
+    background: @brown;
 
     font-size: 0.92rem;
     font-weight: 800;
-    color: @brown;
+    color: @white;
     text-transform: uppercase;
     text-decoration: none;
     
     transition: background 0.2s linear, color 0.2s linear, border-bottom 0.2s linear;
     
     &:hover{
-        background: @brown;
-        border: 3px solid @brown__mid;
-        border-bottom: 3px solid @brown__low;
-        color: @white;
-        background-color: @brown__mid;
+        background: @white;
+        color: @brown;
+        border: 1px solid @brown;
+        border-bottom: 3px solid @brown;
     }
-
 }
 
 
+/*  Slick   */
+
+ 
 
 .slick-list{
     outline: none;
@@ -52,25 +55,58 @@
 .slick-arrow:after{
     content: "";
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 48px;
+    height: 48px;
 
-    border-top: 3px solid @brown__light;
-    border-left: 3px solid @brown__light;
-    
+    border-top: 3px solid @gray__mid;
+    border-left: 3px solid @gray__mid;
+
+    @media @mobile{
+        width: 20px;
+        height: 20px;   
+
+        border-top: 2px solid @gray__mid;
+        border-left: 2px solid @gray__mid;
+    }
 }
 
 
 .slick-prev{
     outline: none;
-    left: 0;
     transform: rotate(-45deg);
+
+    position: absolute;
+    left: 10%;
+    top: 50%;
+
+    @media @tablet{
+        top: 40%;
+        left: 5%;
+    }
+
+    @media @mobile{
+        left: 3%;    
+    }
 }
 
 .slick-next{
     outline: none;
     right: 0;
     transform: rotate(135deg);
+
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    
+
+    @media @tablet{
+        top: 40%;
+        right: 5%;
+    }
+
+    @media @mobile{
+        right: 3%;
+    }
 }
 
 
@@ -78,9 +114,17 @@
     display: flex;
     justify-content: center;
     padding: 0 1rem;
-    margin: 2rem 0 0;
-    list-style: none;
+    margin: 2rem 0 2rem;
+    list-style: none;   
 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    
+    
 
     li{
         margin: 0 0.5rem;
@@ -88,14 +132,14 @@
         &.slick-active{
             button{ 
                 background: transparent;
-                border: 2px solid @brown__light;
+                border: 3px solid @brown__light;
             }
         }
     }
 
     button{
-        width: 11px;
-        height: 11px;
+        width: 1rem;
+        height: 1rem;
         padding: 0.5rem;
         border: none;
         background: @gray__light;
