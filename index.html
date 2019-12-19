@@ -16,20 +16,22 @@
 
     <header class="header">
         <div class="container">
-            <div class="header__inner">    
-                <div class="logo">
-                    <img class="logo__image" src="assets/images/logo.png" alt="">
-                    <h1 class="logo__text">Waxom</h1>
-                </div>
+            <div class="header__inner">  
+
+                    <a class="logo" href="#" data-scroll="#intro"> 
+                        <img class="logo__image" src="assets/images/logo.png" alt="">
+                        <h1 class="logo__text">Waxom</h1>
+                    </a>
+               
                 <nav class="nav" id="nav">
-                    <a class="nav__link" href="#">Home</a>
-                    <a class="nav__link" href="#">About us</a>
-                    <a class="nav__link" href="#">Portfolio</a>
-                    <a class="nav__link" href="#">Features</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Pricing</a>
-                    <a class="nav__link" href="#">Shortcodes</a>
-                    <a class="nav__link" href="#">Contact</a>
+                    <a class="nav__link" href="#" data-scroll="#intro">Home</a>
+                    <a class="nav__link" href="#" data-scroll="#intro">About us</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Portfolio</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Features</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Blog</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Pricing</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Shortcodes</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
 
                     <a class="nav__link" href="#">
                         <i class="fas fa-shopping-bag"></i>
@@ -46,7 +48,7 @@
             </div>
         </div>    
     </header>
-<section class="intro">
+<section class="intro" id="intro">
     <div class="container">
        
 
@@ -84,7 +86,7 @@
     </div> <!-- ./container -->
 </section> <!-- ./intro -->
 
-<section class="works">
+<section class="works" id="works">
     <div class="container">
         <div class="works__text">
             <h1 class="works__title">Our Latest Projects.</h1>
@@ -93,7 +95,8 @@
                 <a class="works__nav-link" href="#" data-filter="all">All</a>
                 <a class="works__nav-link" href="#" data-filter="design">Web Design</a>
                 <a class="works__nav-link" href="#" data-filter="app">Mobile App</a>
-                <a class="works__nav-link" href="#" data-filter="illustration">Illustration</a>
+                <a class="works__nav-link" href="#"
+                data-filter="illustration">Illustration</a>
                 <a class="works__nav-link" href="#" data-filter="photography">Photography</a>
             </div>
         </div>
@@ -233,7 +236,7 @@
 </section> <!-- /.works -->
 
 
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="container">
         <div class="footer__inner">
             <div class="footer__col">

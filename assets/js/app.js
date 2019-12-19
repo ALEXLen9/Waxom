@@ -6,12 +6,24 @@ $(function()    {
     $("[data-slider]").slick({
         infinite: true,
         fade: false,
-        //dots: boolean,
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1
     });
 
 
+    /*  Smooth scroll   */
+
+    $("[data-scroll]").on("click", function(event) {
+        event.preventDefault();
+
+        var blockId = $(this).data('scroll'),
+            blockOffset = $(blockId).offset().top;
+
+        $("html, body").animate({
+            scrollTop: blockOffset
+        }, 500);
+    });
 
 
 /*  Filter  */
